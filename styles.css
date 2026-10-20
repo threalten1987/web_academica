@@ -83,13 +83,12 @@ header .navbar {
     gap: 10px;
 }
 
-.nav-item:hover {
-    background: var(--clr-menu);
-    color: white;
+.nav-link:hover {
+    color: var(--clr-menu);
 }
 
-.nav-link:hover {
-    color: white;
+.nav-logo:hover {
+    color: var(--clr-menu);
 }
 
 .hero {
