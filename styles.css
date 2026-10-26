@@ -101,6 +101,15 @@ header .navbar {
     background: var(--clr-snow);
 }
 
+.role{
+    margin-bottom: 10px;
+}
+
+.about-me-title {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
 
 footer {
     background: var(--clr-mint);
