@@ -99,6 +99,19 @@ header .navbar {
   color: var(--clr-menu);
 }
 
+.flags {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flags__items {
+  width: 30px; 
+}
+
+
+
 .hero {
   display: flex;
   gap: 30px;
@@ -136,6 +149,10 @@ footer {
   margin-bottom: 20px;
   margin-top: 10px;
   text-align: justify;
+}
+
+.bio a {
+  text-decoration: none;
 }
 
 .about-me-title {
@@ -322,15 +339,18 @@ p.teaching-paragraph {
 }
 
 .research-title {
+  font-size: 1.75rem;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 5px;
 }
+
+
 
 .research-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 10px 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -368,7 +388,7 @@ p.teaching-paragraph {
 
 .research-card-image {
   width: 100%;
-  height: auto;
+  height: 180px;
   border-radius: 8px; /* Example border radius */
   object-fit: cover;
   display: block;
