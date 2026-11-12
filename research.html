@@ -11,29 +11,34 @@
   <body>
     <header>
       <nav class="navbar">
-      <a href="index.html" class="nav-logo">
-        <h2>Javiera Araya-Moreno</h2>
-      </a>
-      <input type="checkbox" id="nav-toggle" />
-      <label class="menu-icon" for="nav-toggle">☰</label>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a href="research.html" class="nav-link">Investigación</a>
-        </li>
-        <li class="nav-item">
-          <a href="teaching.html" class="nav-link">Docencia</a>
-        </li>
-        <li class="nav-item">
-          <a href="publications.html" class="nav-link">Publicaciones</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://drive.google.com/file/d/1hXrnhEDVCk3Q2ZqJuEzyL12JjMLD5XQJ/view?usp=sharing" target="_blank" class="nav-link">CV</a>
-        </li>
-      </ul>
-    </nav>
+        <a href="index.html" class="nav-logo">
+          <h2>Javiera Araya-Moreno</h2>
+        </a>
+        <input type="checkbox" id="nav-toggle" />
+        <label class="menu-icon" for="nav-toggle">☰</label>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="research.html" class="nav-link">Investigación</a>
+          </li>
+          <li class="nav-item">
+            <a href="teaching.html" class="nav-link">Docencia</a>
+          </li>
+          <li class="nav-item">
+            <a href="publications.html" class="nav-link">Publicaciones</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://drive.google.com/file/d/1hXrnhEDVCk3Q2ZqJuEzyL12JjMLD5XQJ/view?usp=sharing"
+              target="_blank"
+              class="nav-link"
+              >CV</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main id="main-content">
       <section class="research-section" id="research">
@@ -48,45 +53,37 @@
             decirnos algo sobre aspectos más amplios de la sociedad. Mi
             investigación se organiza en torno a cuatro temas principales:
           </p>
-          <div class="research-card-container">
-            <div class="research-card">
-              <img class="research-card-image" src="/img/129543.jpg" width="640" height="480"  alt="law" />
-              <div class="research-card-content">
-                <h3 class="research-card-title">
-                  La técnica jurídica y la delincuencia
-                </h3>
-                <p class="research-card-paragraph">
-                  Me interesa cómo la técnica jurídica – cuando se aplica en la
-                  práctica – configura sociedades. En mi investigación de
-                  doctorado, basada en trabajo de campo en Chile, muestro cómo
-                  la noción jurídica de la detención en flagrancia estructura
-                  las percepciones de la delincuencia y configura un régimen
-                  específico de construcción de la verdad. Este argumento se
-                  desarrolla en artículos publicados en Law & Society Review y
-                  Droit et société. Creo que la investigación social debe ser
-                  accesible para las personas y comunidades sobre las que
-                  escribimos, por lo que estoy convirtiendo mi investigación de
-                  doctorado en un libro en español, titulado Gobernando a través
-                  del delito flagrante.
-                </p>
-                <p class="research-card-paragraph">
-                  Más allá del delito flagrante, he explorado una tecnología del
-                  sistema de justicia penal en Chile que es más conocida: las
-                  estadísticas sobre la delincuencia. He escrito sobre las
-                  estadísticas sobre la delincuencia en general y, más
-                  específicamente, sobre las estadísticas de robo de autos. No
-                  importa cuán precisas sean estas estadísticas, la gente parece
-                  no creerles.
-                </p>
-              </div>
-            </div>
-            <div class="research-card">
-              <img class="research-card-image" src="/img/57173.jpg" width="640" height="480" alt="jurisdiccion"/>
-              <div class="research-card-content">
-                <h3 class="research-card-title">
-                Técnica jurídica y jurisdicción
-                </h3>
-                <p class="research-card-paragraph">
+          <div class="acordeon-container">
+            <details name="faq">
+              <summary>La técnica jurídica y la delincuencia</summary>
+              <p>
+                Me interesa cómo la técnica jurídica – cuando se aplica en la
+                práctica – configura sociedades. En mi investigación de
+                doctorado, basada en trabajo de campo en Chile, muestro cómo la
+                noción jurídica de la detención en flagrancia estructura las
+                percepciones de la delincuencia y configura un régimen
+                específico de construcción de la verdad. Este argumento se
+                desarrolla en artículos publicados en Law & Society Review y
+                Droit et société. Creo que la investigación social debe ser
+                accesible para las personas y comunidades sobre las que
+                escribimos, por lo que estoy convirtiendo mi investigación de
+                doctorado en un libro en español, titulado Gobernando a través
+                del delito flagrante.
+              </p>
+              <p>
+                Más allá del delito flagrante, he explorado una tecnología del
+                sistema de justicia penal en Chile que es más conocida: las
+                estadísticas sobre la delincuencia. He escrito sobre las
+                estadísticas sobre la delincuencia en general y, más
+                específicamente, sobre las estadísticas de robo de autos. No
+                importa cuán precisas sean estas estadísticas, la gente parece
+                no creerles.
+              </p>
+            </details>
+
+            <details name="faq">
+              <summary>Técnica jurídica y jurisdicción</summary>
+              <p>
                 La jurisdicción se refiere a la autoridad para aplicar la ley
                 dentro de un territorio o ámbito específico. En mi trabajo, me
                 interesa documentar cómo, en la práctica y a pesar de lo que
@@ -103,16 +100,12 @@
                 declarados por los municipios en respuesta a desastres como
                 inundaciones e incendios forestales: en estas situaciones, los
                 municipios a veces se ven con menos poder, en lugar de más.
-                </p>
-              </div>
-            </div>
-            <div class="research-card">
-              <img class="research-card-image" src="/img/2148502216.jpg" width="640" height="480" alt="desmaterialización"/>
-              <div class="research-card-content">
-                <h3 class="research-card-title">
-                Técnica jurídica y desmaterialización
-                </h3>
-                <p class="research-card-paragraph">
+              </p>
+            </details>
+
+            <details name="faq">
+              <summary>Técnica jurídica y desmaterialización</summary>
+              <p>
                 Los sistemas de justicia se basan en ciertas configuraciones
                 materiales, como expedientes, salas de audiencia y grabadoras.
                 Aunque puedan parecer aspectos secundarios en comparación con
@@ -131,16 +124,11 @@
                 jurídico— puede impedir una comprensión adecuada del papel que
                 desempeñan tanto las tecnologías físicas como las digitales en
                 los entornos jurídicos.
-                </p>
-              </div>
-            </div>
-            <div class="research-card">
-              <img class="research-card-image" src="/img/2151202419.jpg" width="640" height="480" alt="Burocracias"/>
-              <div class="research-card-content">
-                <h3 class="research-card-title">
-                Técnica jurídica, metodología y burocracias
-                </h3>
-                <p class="research-card-paragraph">
+              </p>
+            </details>
+            <details name="faq">
+              <summary>Técnica jurídica, metodología y burocracias</summary>
+              <p>
                 Mi trabajo adopta una perspectiva “externa” al derecho, pero
                 toma al derecho tan en serio como lo haría una perspectiva
                 “interna”. Mediante métodos empíricos, mi investigación somete
@@ -156,12 +144,18 @@
                 y producido por instituciones burocráticas y que, por lo tanto,
                 los sistemas de justicia deben abordarse como las burocracias
                 que son.
-                </p>
-              </div>
-            </div>
+              </p>
+            </details>
           </div>
           <p class="research-paragraph">
-            A lo largo de mi carrera, he trabajado en una variedad de temas y con diversos equipos de investigación, experiencias que me han ayudado a perfeccionar mis habilidades y a ampliar mi conocimiento general del mundo. Entre otros países, he realizado trabajo de campo en Malí, Burkina Faso y Colombia, y he formado parte de equipos que investigan temas tan diversos como la radicalización religiosa, las comunidades mineras, las políticas de inmigración, las series de televisión y la adaptación al cambio climático.
+            A lo largo de mi carrera, he trabajado en una variedad de temas y
+            con diversos equipos de investigación, experiencias que me han
+            ayudado a perfeccionar mis habilidades y a ampliar mi conocimiento
+            general del mundo. Entre otros países, he realizado trabajo de campo
+            en Malí, Burkina Faso y Colombia, y he formado parte de equipos que
+            investigan temas tan diversos como la radicalización religiosa, las
+            comunidades mineras, las políticas de inmigración, las series de
+            televisión y la adaptación al cambio climático.
           </p>
         </div>
       </section>

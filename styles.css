@@ -312,6 +312,7 @@ p.teaching-paragraph {
   max-width: 1200px;
   width: 100%;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .teaching-card {
@@ -324,9 +325,17 @@ p.teaching-paragraph {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  flex: 1;
+  flex: 1 1 220px;
   max-width: 500px;
 }
+
+.teaching-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
 .teaching-card-text {
   margin: 10px;
   font-size: 16px;
@@ -362,56 +371,57 @@ p.teaching-paragraph {
   margin: 10px;
 }
 
-.research-card-container {
-  margin-top: 10px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.research-card {
-  width: 780px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: var(--clr-cadetblue);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.research-card:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-.research-card-image {
+.acordeon-container {
   width: 100%;
-  height: 180px;
-  border-radius: 8px; /* Example border radius */
-  object-fit: cover;
-  display: block;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
 }
 
-.research-card-content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+details {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
 }
 
-.research-card-title {
-  font-size: 1.25rem;
-  text-align: center;
+details:last-child {
+  border-bottom: none;
+}
+
+summary {
+  padding: 15px 20px;
   font-weight: bold;
-  margin: 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
 }
 
-.research-card-paragraph {
-  margin: 0;
-  font-size: 1rem;
+summary::-webkit-details-marker {
+  display: none; /* Oculta la flecha por defecto en algunos navegadores */
 }
 
+summary::after {
+  content: '+';
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+details p {
+  padding: 0 20px 15px 20px;
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
 .image-wrap {
   margin: 10px;
   flex-shrink: 0;
@@ -540,6 +550,22 @@ p.teaching-paragraph {
   .teaching-topic,
   .research-topic {
     margin: 10px 0;
+  }
+
+  .teaching-card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .teaching-card {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .teaching-card-image {
+    height: 200px;
   }
 }
 
