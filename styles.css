@@ -354,8 +354,6 @@ p.teaching-paragraph {
   margin-bottom: 5px;
 }
 
-
-
 .research-container {
   max-width: 900px;
   margin: 0 auto;
@@ -373,7 +371,6 @@ p.teaching-paragraph {
 
 .acordeon-container {
   width: 100%;
-  max-width: 600px;
   margin: 20px auto;
   border-radius: 12px;
   overflow: hidden;
@@ -587,3 +584,22 @@ details p {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+/* Language Menu */
+
+#flags {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.flags__item {
+  width: 30px;
+}
+
+.flags__img {
+  display: block;
+  cursor: pointer;
+}
